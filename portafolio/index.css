@@ -1,0 +1,405 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: url(img/fondo1.jfif);
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 1.4vh;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#20024b, #0c0911);
+    border-radius: 40px;
+    border: 1px solid rgba(130, 0, 170, 0.562);
+}
+
+.fondoP{
+    position: relative;
+    top: 65vh;
+    width: 190vh;
+    height: 210Vh;
+    background: linear-gradient(#0c0911d2, #12002bd2);
+    border-radius: 2vh;
+}
+
+.fondoAnimado{
+    position: absolute;
+    width: 190vh;
+    height: 70vh;
+    border-radius: 3vh;
+    z-index: 1;
+}
+
+.perfil{
+    position: absolute;
+    top: 25vh;
+    height: 40vh;
+    z-index: 2;
+}
+
+.fotoPerfil{
+    position: relative;
+    top: -20vh;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50vh;
+    border: 1vh solid #12002b;
+
+    transition-property: filter;
+    transition-duration: 500ms;
+}
+
+.fotoPerfil:hover{
+    filter: drop-shadow(5px 5px 3px rgb(0, 0, 0));
+}
+
+.contenidoPerfil{
+    position: relative;
+    top: -24vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 6vh;
+    color: aliceblue;
+    cursor: default;
+    margin: 5vh 0 2vh 0;
+
+    animation-name: animationname;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animationname{
+    from{filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0));}
+    to{filter: drop-shadow(1px 1px 10px rgb(234, 180, 255));}
+}
+
+.rol{
+    text-align: center;
+    font-size: 4vh;
+    color: aliceblue;
+    cursor: default;
+}
+
+.stack{
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 700;
+    color: aliceblue;
+    cursor: default;
+}
+.contenedorRedes{
+    position: absolute;
+    top: 60vh;
+    right: 12vh;
+    width: 35vh;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.iconRedes{
+    width: 8vh;
+    background-color: aliceblue;
+    border-radius: 20vh;
+    border: 0.5vh solid aliceblue;
+    cursor: pointer;
+
+    transition-property: background-color, border, filter, transform;
+    transition-duration: 500ms;
+}
+
+#iconotelegram:hover{
+    background-color: #24a1de;
+    border: 0.5vh solid #24a1de;
+    filter: drop-shadow(5px 5px 3px rgb(0, 0, 0));
+    transform: rotateY(360deg);
+
+}
+
+#iconowhatsapp:hover{
+    background-color: #00bb2d;
+    border: 0.5vh solid #00bb2d;
+    filter: drop-shadow(5px 5px 3px rgb(0, 0, 0));
+    transform: rotateY(360deg);
+}
+
+#iconogithub:hover{
+    background-color: #2A0084;
+    border: 0.5vh solid #2A0084;
+    filter: drop-shadow(5px 5px 3px rgb(0, 0, 0));
+    transform: rotateY(360deg);
+}
+
+.idioma{
+    position: absolute;
+    top: 10vh;
+    left: 7vh;
+    width: 30vh;
+    height: 22vh;
+    padding-inline: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000b2;
+    border-radius: 3vh;
+    border: 0.2vh solid white;
+}
+
+.educacion{
+    position: absolute;
+    top: 38vh;
+    left: 7vh;
+    width: 30vh;
+    height: 22vh;
+    padding-inline: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000b2;
+    border-radius: 3vh;
+    border: 0.2vh solid white;
+}
+
+.descripcion, .tecnologiaTrabajo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 10vh;
+    right: 45vh;
+    width: 100vh;
+    height: 22vh;
+    align-items: center;
+    background-color: #000000b2;
+    border-radius: 3vh;
+}
+
+.textoDescripcion{
+    font-size: 2.5vh;
+    text-align: center;
+    color: aliceblue;
+}
+
+.tecnologiaTrabajo{
+    top: 38vh;
+}
+
+.tituloTecnologiaTrabajo{
+    text-align: center;
+    font-size: 3vh;
+    color: aliceblue;
+    cursor: default;
+    text-decoration: underline;
+}
+
+.textoTecnologiaTrabajo{
+    text-align: center;
+    font-size: 2vh;
+    color: aliceblue;
+}
+
+.contactos{
+    position: absolute;
+    top: 10vh;
+    right: 7vh;
+    width: 30vh;
+    height: 50vh;
+    padding-inline: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000b2;
+    border-radius: 3vh;
+    border: 0.2vh solid white;
+}
+
+.tituloContacto, .tituloIdioma, .tituloEducacion{
+    text-align: center;
+    font-size: 3vh;
+    color: aliceblue;
+    cursor: default;
+    text-decoration: underline;
+}
+
+.datoContacto{
+    text-align: center;
+    font-size: 2.2vh;
+    color: aliceblue;
+    padding-bottom: 1vh;
+    cursor: text;
+}
+
+.iconosDatos{
+    margin: 2vh 0 1vh 0;
+    width: 6vh;
+    background-color: aliceblue;
+    border-radius: 20vh;
+    border: 0.5vh solid aliceblue;
+    cursor: pointer;
+    transition-property: background-color, border;
+    transition-duration: 500ms;
+}
+
+.iconosDatos:hover{
+    background-color: #a96cff;
+    border-color: #a96cff;
+}
+
+
+.idiomas{
+    position: relative;
+    top: 10vh;
+    left: 7vh;
+    width: 30vh;
+    height: 50vh;
+    padding-inline: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000b2;
+    border-radius: 3vh;
+    border: 0.2vh solid white;
+}
+
+.tituloProyectos{
+    position: relative;
+    top: 60vh;
+    text-align: center;
+    font-size: 5vh;
+    color: aliceblue;
+    cursor: default;
+}
+
+.contenedorProyectos{
+    position: absolute;
+    top: 75vh;
+    width: 190vh;
+    height: 62vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000b2;
+    border-radius: 3vh;
+}
+.proyectos{
+    position: relative;
+    height: 60vh;
+    width: 40vh;
+    border-radius: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/proyecto1.gif);
+    background-size: cover;
+    cursor: pointer;
+
+    transition-property: filter;
+    transition-duration: 500ms;
+}
+
+.proyectos:hover{
+    filter: drop-shadow(1px 1px 5px rgb(234, 180, 255));
+}
+
+#proyecto2{
+    background-image: url(img/proyecto2.gif);
+}
+
+#proyecto3{
+    background-image: url(img/proyecto3.gif);
+}
+
+#proyecto4{
+    background-image: url(img/proyecto4.gif);
+}
+
+.descripcionProyecto{
+    text-align: center;
+    font-size: 5vh;
+    color: rgb(240, 248, 255);
+    cursor: default;
+}
+
+.tituloTecnologia{
+    position: relative;
+    top: 128vh;
+    text-align: center;
+    font-size: 5vh;
+    color: aliceblue;
+    cursor: default;
+}
+
+.contenedorTecnologia{
+    position: absolute;
+    top: 150vh;
+    width: 190vh;
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #000000b2;
+    border-radius: 3vh;
+}
+
+.diviciones{
+    width: 90vh;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloSkills{
+    width: 40vh;
+    font-size: 4vh;
+    font-weight: 700;
+    margin: 2vh 0 0 2vh;
+    color: aliceblue;
+}
+
+.porcentaje{
+    display: flex;
+    align-items: end;
+    margin-left: 23vh;
+    font-size: 3vh;
+    color: aliceblue;
+}
+
+.barra{
+    width: 70vh;
+    height: 3vh;
+    margin: 1vh 2vh 0 2vh;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 2vh;
+    border: 0.4vh solid rgba(255, 255, 255, 0.863);
+}
+
+.progres1, .progres2, .progres3, .progres4, .progres5{
+    width: 80%;
+    height: 3vh;
+    background: linear-gradient(45deg, #20024b, #0c0911);
+    border-radius: 2vh;
+}
+
+.progres2{
+    width: 70%;
+}
+.progres3{
+    width: 55%;
+}
+.progres4{
+    width: 90%;
+}
+.progres5{
+    width: 60%;
+}
